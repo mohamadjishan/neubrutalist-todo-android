@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Neubrutalism Colors -->
+    <color name="bg_main">#F3F3F3</color>
+    <color name="accent_yellow">#FFD600</color>
+    <color name="accent_purple">#A388EE</color>
+    <color name="accent_pink">#FF90E8</color>
+    <color name="accent_green">#00E599</color>
+    <color name="accent_blue">#33B5FF</color>
+    <color name="accent_orange">#FF6B00</color>
+    <color name="accent_teal">#00D1FF</color>
+    <color name="border_black">#000000</color>
+    <color name="shadow_black">#000000</color>
+</resources>

@@ -1,0 +1,6 @@
+com.example.routiq.test.app-core-1.7.0-0 C:\Users\jisha\.gradle\caches\8.13\transforms\90f00af5e811edf4d4c025a36813fe4a\transformed\core-1.7.0\res
+com.example.routiq.test.app-androidTest-1 C:\Users\jisha\StudioProjects\Routiq\app\build\generated\res\resValues\androidTest\debug
+com.example.routiq.test.app-updated_navigation_xml-2 C:\Users\jisha\StudioProjects\Routiq\app\build\generated\updated_navigation_xml\debugAndroidTest
+com.example.routiq.test.app-mergeDebugAndroidTestResources-3 C:\Users\jisha\StudioProjects\Routiq\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.routiq.test.app-mergeDebugAndroidTestResources-4 C:\Users\jisha\StudioProjects\Routiq\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.routiq.test.app-debugAndroidTest-5 C:\Users\jisha\StudioProjects\Routiq\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

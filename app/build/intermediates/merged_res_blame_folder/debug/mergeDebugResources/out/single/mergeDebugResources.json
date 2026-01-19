@@ -1,0 +1,150 @@
+[
+    {
+        "merged": "com.example.routiq.app-debug-34:/layout_activity_add_task.xml.flat",
+        "source": "com.example.routiq.app-main-36:/layout/activity_add_task.xml"
+    },
+    {
+        "merged": "com.example.routiq.app-debug-34:/layout_item_subtask_display.xml.flat",
+        "source": "com.example.routiq.app-main-36:/layout/item_subtask_display.xml"
+    },
+    {
+        "merged": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-debug-34:\\layout_item_stat.xml.flat",
+        "source": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-main-36:\\layout\\item_stat.xml"
+    },
+    {
+        "merged": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-debug-34:\\drawable_neubrutalism_card_bg.xml.flat",
+        "source": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-main-36:\\drawable\\neubrutalism_card_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-debug-34:\\layout_fragment_stats.xml.flat",
+        "source": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-main-36:\\layout\\fragment_stats.xml"
+    },
+    {
+        "merged": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-debug-34:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-main-36:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-debug-34:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-main-36:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.routiq.app-debug-34:/layout_item_task.xml.flat",
+        "source": "com.example.routiq.app-main-36:/layout/item_task.xml"
+    },
+    {
+        "merged": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-debug-34:\\layout_activity_add_task.xml.flat",
+        "source": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-main-36:\\layout\\activity_add_task.xml"
+    },
+    {
+        "merged": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-debug-34:\\layout_fragment_settings.xml.flat",
+        "source": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-main-36:\\layout\\fragment_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-debug-34:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-main-36:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-debug-34:\\color_chip_bg_selector.xml.flat",
+        "source": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-main-36:\\color\\chip_bg_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-debug-34:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-main-36:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "com.example.routiq.app-debug-34:/layout_item_subtask_input.xml.flat",
+        "source": "com.example.routiq.app-main-36:/layout/item_subtask_input.xml"
+    },
+    {
+        "merged": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-debug-34:\\drawable_neubrutalism_button_bg.xml.flat",
+        "source": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-main-36:\\drawable\\neubrutalism_button_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-debug-34:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-main-36:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-debug-34:\\layout_fragment_tasks.xml.flat",
+        "source": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-main-36:\\layout\\fragment_tasks.xml"
+    },
+    {
+        "merged": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-debug-34:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-main-36:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-debug-34:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-main-36:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-debug-34:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-main-36:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-debug-34:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-main-36:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-debug-34:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-main-36:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-debug-34:\\drawable_neubrutalism_splash_bg.xml.flat",
+        "source": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-main-36:\\drawable\\neubrutalism_splash_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-debug-34:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-main-36:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-debug-34:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-main-36:\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-debug-34:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-main-36:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-debug-34:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-main-36:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-debug-34:\\xml_file_paths.xml.flat",
+        "source": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-main-36:\\xml\\file_paths.xml"
+    },
+    {
+        "merged": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-debug-34:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-main-36:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-debug-34:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-main-36:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-debug-34:\\layout_fragment_calendar.xml.flat",
+        "source": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-main-36:\\layout\\fragment_calendar.xml"
+    },
+    {
+        "merged": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-debug-34:\\layout_item_task.xml.flat",
+        "source": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-main-36:\\layout\\item_task.xml"
+    },
+    {
+        "merged": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-debug-34:\\layout_dialog_add_task.xml.flat",
+        "source": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-main-36:\\layout\\dialog_add_task.xml"
+    },
+    {
+        "merged": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-debug-34:\\drawable_neubrutalism_input_bg.xml.flat",
+        "source": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-main-36:\\drawable\\neubrutalism_input_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-debug-34:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-main-36:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-debug-34:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-main-36:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-debug-34:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\jisha\\.gradle\\daemon\\8.13\\com.example.routiq.app-main-36:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    }
+]

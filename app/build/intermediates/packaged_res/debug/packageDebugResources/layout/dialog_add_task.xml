@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <EditText
+        android:id="@+id/etTaskTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/neubrutalism_input_bg"
+        android:hint="Enter task title..."
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="#757575" />
+
+    <Button
+        android:id="@+id/btnSetReminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/neubrutalism_button_bg"
+        android:text="Set Reminder"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
+
+</LinearLayout>
