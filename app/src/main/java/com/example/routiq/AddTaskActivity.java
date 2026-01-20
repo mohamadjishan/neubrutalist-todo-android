@@ -32,7 +32,7 @@ import java.util.Locale;
 public class AddTaskActivity extends AppCompatActivity {
 
     private EditText etTitle, etSubtaskTitle;
-    private TextView tvReminderValue;
+    private TextView tvReminderValue, tvAddTitle;
     private Calendar reminderCalendar;
     private AppDatabase db;
     private Spinner spinnerCategory, spinnerNagInterval;
@@ -40,6 +40,9 @@ public class AddTaskActivity extends AppCompatActivity {
     private CheckBox cbRecurring, cbNag;
     private LinearLayout llSubtasksContainer, llNagOptions;
     private List<String> subtasks = new ArrayList<>();
+    
+    private int editTaskId = -1;
+    private Task existingTask;
 
     private final String[] nagOptions = {"5 Minutes", "10 Minutes", "15 Minutes", "30 Minutes", "1 Hour", "2 Hours"};
     private final int[] nagMinutes = {5, 10, 15, 30, 60, 120};
@@ -50,6 +53,7 @@ public class AddTaskActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_task);
 
         db = AppDatabase.getInstance(this);
+        tvAddTitle = findViewById(R.id.tvAddTitle);
         etTitle = findViewById(R.id.etTaskTitle);
         etSubtaskTitle = findViewById(R.id.etSubtaskTitle);
         tvReminderValue = findViewById(R.id.tvReminderValue);
@@ -81,6 +85,66 @@ public class AddTaskActivity extends AppCompatActivity {
         btnAddSubtask.setOnClickListener(v -> addSubtask());
         btnPickDateTime.setOnClickListener(v -> showDateTimePicker());
         btnSave.setOnClickListener(v -> saveTask());
+
+        // Check for edit mode
+        editTaskId = getIntent().getIntExtra("taskId", -1);
+        if (editTaskId != -1) {
+            setupEditMode();
+        }
+    }
+
+    private void setupEditMode() {
+        existingTask = db.taskDao().getTaskById(editTaskId);
+        if (existingTask != null) {
+            tvAddTitle.setText("Edit Task");
+            etTitle.setText(existingTask.title);
+            
+            // Priority
+            if (existingTask.priority == 0) cgPriority.check(R.id.chipLow);
+            else if (existingTask.priority == 1) cgPriority.check(R.id.chipMedium);
+            else if (existingTask.priority == 2) cgPriority.check(R.id.chipHigh);
+            
+            // Category
+            String[] categories = {"General", "Work", "Personal", "Study", "Health", "Finance"};
+            for (int i = 0; i < categories.length; i++) {
+                if (categories[i].equals(existingTask.category)) {
+                    spinnerCategory.setSelection(i);
+                    break;
+                }
+            }
+            
+            // Reminder
+            if (existingTask.reminderTime > 0) {
+                reminderCalendar = Calendar.getInstance();
+                reminderCalendar.setTimeInMillis(existingTask.reminderTime);
+                SimpleDateFormat sdf = new SimpleDateFormat("MMM dd, HH:mm", Locale.getDefault());
+                tvReminderValue.setText(sdf.format(reminderCalendar.getTime()));
+            }
+            
+            cbRecurring.setChecked(existingTask.isRecurring);
+            cbNag.setChecked(existingTask.nagUntilComplete);
+            
+            if (existingTask.nagUntilComplete) {
+                llNagOptions.setVisibility(View.VISIBLE);
+                for (int i = 0; i < nagMinutes.length; i++) {
+                    if (nagMinutes[i] == existingTask.nagIntervalMinutes) {
+                        spinnerNagInterval.setSelection(i);
+                        break;
+                    }
+                }
+            }
+            
+            // Subtasks
+            try {
+                JSONArray array = new JSONArray(existingTask.subtasksJson);
+                for (int i = 0; i < array.length(); i++) {
+                    subtasks.add(array.getJSONObject(i).getString("title"));
+                }
+                renderSubtasks();
+            } catch (JSONException e) {}
+
+            ((Button)findViewById(R.id.btnSaveTask)).setText("Update Task");
+        }
     }
 
     private void addSubtask() {
@@ -132,7 +196,16 @@ public class AddTaskActivity extends AppCompatActivity {
         }
 
         long remTime = (reminderCalendar != null) ? reminderCalendar.getTimeInMillis() : 0;
-        Task task = new Task(title, "", System.currentTimeMillis(), remTime);
+        
+        Task task;
+        if (editTaskId != -1 && existingTask != null) {
+            task = existingTask;
+            task.title = title;
+            task.reminderTime = remTime;
+        } else {
+            task = new Task(title, "", System.currentTimeMillis(), remTime);
+        }
+        
         task.category = spinnerCategory.getSelectedItem().toString();
         
         int priority = 1;
@@ -158,13 +231,29 @@ public class AddTaskActivity extends AppCompatActivity {
         }
         task.subtasksJson = array.toString();
 
-        long insertedId = db.taskDao().insert(task);
-        task.id = (int) insertedId;
+        if (editTaskId != -1) {
+            db.taskDao().update(task);
+            cancelExistingAlarm(task.id);
+        } else {
+            long insertedId = db.taskDao().insert(task);
+            task.id = (int) insertedId;
+        }
 
         if (remTime > 0) {
             scheduleNotification(task);
         }
+
+        Toast.makeText(this, editTaskId != -1 ? "Task updated!" : "Task created!", Toast.LENGTH_SHORT).show();
         finish();
+    }
+
+    private void cancelExistingAlarm(int taskId) {
+        Intent intent = new Intent(this, ReminderReceiver.class);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, taskId, intent, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
+        AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+        if (alarmManager != null) {
+            alarmManager.cancel(pendingIntent);
+        }
     }
 
     private void scheduleNotification(Task task) {

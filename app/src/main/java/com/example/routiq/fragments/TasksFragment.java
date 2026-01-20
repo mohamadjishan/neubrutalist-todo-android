@@ -112,9 +112,10 @@ public class TasksFragment extends Fragment {
             }
             loadTasks();
         }, task -> {
-            cancelAlarm(task);
-            db.taskDao().delete(task);
-            loadTasks();
+            // This is called when the user clicks on the task (to edit)
+            Intent intent = new Intent(getContext(), AddTaskActivity.class);
+            intent.putExtra("taskId", task.id);
+            startActivity(intent);
         });
         recyclerView.setAdapter(adapter);
     }
