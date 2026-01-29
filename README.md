@@ -53,7 +53,7 @@ Routiq features:
 ### Installation
 1.  **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/routiq-android.git
+    git clone https://github.com/JishanMaraviya/neubrutalist-todo-android.git
     ```
 2.  **Open in Android Studio**:
     *   Launch Android Studio.
@@ -72,15 +72,3 @@ Routiq features:
 6.  **Delete**: Swipe a task to the left or right to remove it permanently.
 7.  **Navigation**: Use the Bottom Navigation Bar to switch between Tasks, Calendar, Stats, and Settings.
 
-## 🤝 Contributing
-
-Contributions are welcome! If you have ideas for new features or improvements:
-1.  Fork the Project
-2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4.  Push to the Branch (`git push origin feature/AmazingFeature`)
-5.  Open a Pull Request
-
-## 📄 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
