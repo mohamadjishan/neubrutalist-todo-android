@@ -1,12 +1,12 @@
 # - Todo App
 
-Routiq is a powerful, productivity-focused Android application designed with a **Neobrutalist** aesthetic. It combines bold visuals with robust task management features to help users stay organized without the clutter in a stylish, modern way.
+This app is a powerful, productivity-focused Android application designed with a **Neobrutalist** aesthetic. It combines bold visuals with robust task management features to help users stay organized without the clutter in a stylish, modern way.
 
 ## 📱 About the App
 
-Routiq breaks away from standard Material Design norms by embracing **Neobrutalism**—a design trend characterized by high contrast, bold typography, thick dark borders, and vibrant colors. The app is built natively for Android to ensure smooth performance and deep system integration.
+Todo app breaks away from standard Material Design norms by embracing **Neobrutalism**—a design trend characterized by high contrast, bold typography, thick dark borders, and vibrant colors. The app is built natively for Android to ensure smooth performance and deep system integration.
 
-The primary goal of Routiq is to provide a distraction-free environment where users can manage their daily tasks, track productivity, and organize their schedule efficiently.
+The primary goal of Todo app is to provide a distraction-free environment where users can manage their daily tasks, track productivity, and organize their schedule efficiently.
 
 ## ✨ Main Features
 
